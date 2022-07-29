@@ -50,7 +50,7 @@ const config = {
 function handleAlias(...args) {
   switch (args.length) {
     case 0:
-      return console.log(chalk.red('alias need at least one param'));
+      return console.log([...config.get().keys()].join('\n'));
     case 1:
       // get
       return console.log(config.get(args[0]));
