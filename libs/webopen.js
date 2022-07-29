@@ -1,7 +1,4 @@
 // 打开浏览器
-// webopen www.baidu.com
-// webopen alias cidev https://vpc-dev-ci.yit.com/view/${env}/job/yit-${env}-${project}/
-// webopen cidev --env=stage+i7 --project=boss-web
 const os = require('os');
 const { readFileSync, writeFileSync } = require('fs');
 const { ensureFileSync } = require('fs-extra');
@@ -50,6 +47,7 @@ const config = {
 function handleAlias(...args) {
   switch (args.length) {
     case 0:
+      // get all
       return console.log([...config.get().keys()].join('\n'));
     case 1:
       // get
