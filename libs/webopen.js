@@ -93,7 +93,7 @@ function parseUrl(url, ...args) {
   if (!params.length) return [url];
   return params.map(v => {
     return url.replace(reg, (...match) => {
-      return v[match[1].split(':')[0]];
+      return encodeURIComponent(v[match[1].split(':')[0]]);
     });
   });
 }
