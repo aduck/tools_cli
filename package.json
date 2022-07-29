@@ -1,7 +1,7 @@
 {
-  "name": "mytool",
+  "name": "@higher/mytool",
   "version": "1.0.0",
-  "description": "",
+  "description": "tools collection by cli",
   "main": "index.js",
   "bin": {
     "mytool": "./index.js"
@@ -9,9 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["generate img", "open url", "quick url visit", "url alias"],
+  "author": "higher",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^8.2.0",
