@@ -26,4 +26,10 @@ webopen alias baidu
 webopen alias
 # 多个参数
 webopen baidu "今天吃什么+不知道"
+# 具名参数，可以不分顺序先后
+webopen alias webdev https://${project}-${env}.xxx.com
+webopen webdev env=i7+stage project=gys
+# 默认值
+webopen alias webdev https://${project:gys}-${env}.xxx.com
+webopen webdev env=i7+stage
 ```
