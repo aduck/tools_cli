@@ -1,5 +1,25 @@
 # 个人用的命令行工具
 
+## 安装
+
+```bash
+# 下载
+git clone https://github.com/aduck/tools_cli.git
+cd tools_cli
+# 安装依赖
+yarn
+# 链接
+yarn link
+```
+
+## 查看命令
+
+```bash
+mytool help
+```
+
+**以下命令皆省略开头的`mytool`**
+
 ## 图片生成
 
 > 在当前目录下生成图片
