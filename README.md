@@ -7,6 +7,8 @@
 ```bash
 # 生成100x200的png图片
 imgen -s 100x200 -t png
+# 强制重新生成
+imgen -s 100x200 -t png -f
 ```
 
 ## 快捷访问url
